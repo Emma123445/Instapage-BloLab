@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat,Arial;
+    background-color: #06135b; 
+    padding-top: 80px;/*pour compresser le header fixe*/
+    line-height: 27px;
+    letter-spacing: .3px;   
+}
+.menu-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.9s ease;
+    z-index: 1000;
+}
+.menu-nav-container{
+    display: flex;
+    justify-content: space-between;   
+    margin-top: 15px; 
+}
+
+/* une classe pour le header lorsqu'il défile */
+header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* couleur du texte lorsque le header défile */
+header.scrolled .logo,
+header.scrolled .nav-menu a,
+header.scrolled .login-btn {
+    color: #06135b;
+}
+
+header.scrolled .get-started-btn {
+    background-color: #06135b;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;  /* Espace entre les éléments du menu */
+    text-decoration: none;
+}
+.list1{
+    text-decoration: none;
+    color:white;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;/*cache le contenu par defaut*/
+    position: absolute;/*absolue par rapport au parent qui est relatif*/
+    background-color: #ffffff;
+    min-width: 320px; /* espace autour du menu déroulant */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*la dimension de l'espace */
+    z-index: 1;
+   /* display: flex; /* Pour aligner les colonnes côte à côte */
+    color: #050d1a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;/* Afficher le contenu quand on survol*/
+}
+
+.dropdown-column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    padding: 10px;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 8px 0;
+}
+
+.dropdown-content a {
+    color: #06135b;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.nav-buttons {
+    display: flex;
+    gap: 5px;
+   margin-top: -11px;
+    padding-left: 100px;
+}
+.nav-list{
+    margin-top:-15px;
+    display: flex;
+    justify-content: center;
+    
+}
+.get-started-btn {
+    background-color: white;
+    color: #06135b;
+    padding: 10px 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-btn {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+/*.Interface1{
+    background-color: #06135b;
+}*/
+.Landing {
+    display: flex;
+    padding: 85px 5%;
+    gap: 50px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Landing-h1{
+    font-size: 24px;
+}
+.Landing-content {
+    flex: 1;
+    max-width: 50%;
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.Landing-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.image1 {
+    flex: 1;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.image1 img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+/* section interface2*/
+.interface2{
+    background-color: rgb(248, 118, 140);
+    border: 0ch;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.header-interface2{
+    height: 90px;
+}
+.nav-bar1{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-top: 80px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.list3{
+    display: inline;
+    margin: 90px;
+    font-size: 18px;
+}
+.nav-bar-center{
+    text-align: center;
+}
+.lists3{
+    
+    list-style: none;
+}
+.Shooting{
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    line-height: 27px;
+    letter-spacing: .3px;
+    
+    
+}.shooting-text{
+    margin-top: 60px;
+    text-align: justify;
+    margin: 50px;
+}
+.shooting-h1{
+    justify-content: center;
+}
+.image2{
+    /*padding: 20px*/
+    /*width: 100%;*/
+    border: 0;
+    outline: none;
+} 
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 5%;
+    background-color: #f9f9f9;
+  }
+  
+  .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .card {
+    flex-basis: calc(33.333% - 20px);
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .row h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .row p {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .card-p{
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .card:hover{
+    transform: translateY(-0.8px);
+  }
+
+  .learn-more {
+    align-self: flex-end;
+    background-color: #4285f4;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /*position: absolute;*/
+  }
+
+  .awards-section {
+    background: #ffffff;
+    padding: 2rem 1rem;
+    color: #06135b;
+}
+.awards-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: black;
+}
+.awards-images{
+    margin-top: -150px;
+}
+/*.awards-list {
+    columns: 2;
+    margin-bottom: 1rem;
+}*/
+.awards-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 100px;
+    
+}
+.awards-images img {
+    width: 80px;
+}
+.testimonial-section {
+    background: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #06135b;
+}
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.testimonial h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.testimonial blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 1rem 0;
+}
+.testimonial h4 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.testimonial p {
+    font-size: 0.9rem;
+    color: #7d7d7d;
+}
+.interface3-content{
+    text-align: center;
+    
+}
+.interface3{
+    height: 50%;
+    color-scheme: white;
+}
+.interface3-content3-texte{
+    color: white;
+}
+/* Footer styles */
+footer {
+    background: #f9f9f9;
+    padding: 2rem 1rem;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #06135b;
+}
+.footer-column h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.footer-column ul {
+    list-style: none;
+}
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+.footer-bottom {
+    /*text-align: center;*/
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #7d7d7d;
+    display: flex;
+    justify-content: space-between;
+}
+  
+  /* Responsivité */
+  @media (max-width: 1024px) {
+    .feature-card {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .feature-card {
+      flex-basis: 100%;
+    }
+  }
+/* Ajustements pour la responsivité */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+}
