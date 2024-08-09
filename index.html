@@ -3,102 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Instapage</title>
     <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <section class="Interface1">
-    <header class="menu-nav" id="menu-nav">
-        <nav>
-            <div class="menu-nav-container">
-                <div class="logo"><a href="menu-nav" class="list1">Instapage</a></div>
-                <div class="nav-list">
-                <ul class="nav-menu">
-                    <li class="dropdown">
-                        <a href="#phototype" class="list1">PLATFORM ▼</a>
-                        <div class="dropdown-content">
-                            <div class="dropdown-column">
-                                <ul>
-                                    <li><a href="#" class="lien2">Platform 1</a></li>
-                                    <li><a href="#" class="lien2">Instapage overview</a></li>
-                                    <li><a href="#" class="lien2">Integration</a></li>
-                                    <li><a href="#" class="lien2">Contact</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-column">
-                                <ul>
-                                    <li><a href="#" class="lien2">Platform 2</a></li>
-                                    <li><a href="#" class="lien2">Other features</a></li>
-                                    <li><a href="#" class="lien2">Support</a></li>
-                                    <li><a href="#" class="lien2">About us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
 
-                    <li class="dropdown">
-                        <a href="#" class="list1">SOLUTIONS ▼</a>
-                        <div class="dropdown-content">
-                            <div class="dropdown-column">
-                                <ul>
-                                    <li><a href="#" class="lien2">Platform 1</a></li>
-                                    <li><a href="#" class="lien2">Instapage overview</a></li>
-                                    <li><a href="#" class="lien2">Integration</a></li>
-                                    <li><a href="#" class="lien2">Contact</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-column">
-                                <ul>
-                                    <li><a href="#" class="lien2">Platform 2</a></li>
-                                    <li><a href="#" class="lien2">Other features</a></li>
-                                    <li><a href="#" class="lien2">Support</a></li>
-                                    <li><a href="#" class="lien2">About us</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-column">
-                                <ul>
-                                    <li><a href="#" class="lien2">Platform 3</a></li>
-                                    <li><a href="#" class="lien2">Other features</a></li>
-                                    <li><a href="#" class="lien2">Support</a></li>
-                                    <li><a href="#" class="lien2">About us</a></li>
-                                </ul>
-                            </div>
+    <section class="Interface1">
+        <header class="header">
+            <a href="#" class="logo">Instapage</a>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+
+            <nav class="navbar">
+                <div class="navbar-content">
+                    <div class="nav-list">
+                        <div class="nav-menu1">
+                            <ul class="nav-menu">
+                                <li class="dropdown">
+                                    <a href="#phototype" class="underline" style="--i:0";><span class="ligne">PLATFORM</span> <i class="fas fa-chevron-down chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-column">
+                                            <ul class="submenu">
+                                                <li><a href="#" class="lien2">Platform 1</a></li>
+                                                <li><a href="#" class="lien2"><i class="fas fa-home"></i>Instapage overview</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Features</a></li>
+                                                <li><a href="#" class="lien2"><i class="fas fa-user"></i>Integration</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-bars"></i>Contact</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <ul class="submenu">
+                                                <li><a href="#" class="lien2">Platform 2</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Other features</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-folder"></i>Support</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-mug-saucer"></i>About us</a></li>
+                                                <li><a href="#" class="lien2"><i class="fas fa-user"></i>Integration</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-bars"></i>Contact</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-mug-saucer"></i>About us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li ><a href="#card-container" class="list1">CUSTOMER STORIES</a></li>
-                    <li ><a class="list1">PRICING</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="list1">RESOURCES ▼</a>
-                        <div class="dropdown-content">
-                            <div class="dropdown-column">
-                                <ul>
-                                    <li><a href="#" class="lien2">Platform 1</a></li>
-                                    <li><a href="#" class="lien2">Instapage overview</a></li>
-                                    <li><a href="#" class="lien2">Integration</a></li>
-                                    <li><a href="#" class="lien2">Contact</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-column">
-                                <ul>
-                                    <li><a href="#" class="lien2">Platform 2</a></li>
-                                    <li><a href="#" class="lien2">Other features</a></li>
-                                    <li><a href="#" class="lien2">Support</a></li>
-                                    <li><a href="#" class="lien2">About us</a></li>
-                                </ul>
-                            </div>
+                        <div class="nav-menu2">
+                            <ul class="nav-menu">
+                                <li class="dropdown">
+                                    <a href="#" class="underline" style="--i:1";>SOLUTIONS <i class="fas fa-chevron-down chevron-down"></i></a>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-column">
+                                            <ul class="submenu">
+                                                <li><a href="#" class="lien2">Platform 1</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-brands fa-instagram"></i>Instapage overview</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-address-book"></i>Integration</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <ul class="submenu">
+                                                <li><a href="#" class="lien2">Platform 2</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Other features</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-folder"></i>Support</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-mug-saucer"></i>About us</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <ul class="submenu">
+                                                <li><a href="#" class="lien2">Platform 3</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Other features</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-folder"></i>Support</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-mug-saucer"></i>About us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                </ul>
+                        <div class="nav-menu3">
+                            <li class="dropdown"><a href="#card-container" class="list1" style="--i:2";>CUSTOMER STORIES</a></li>
+                        </div>
+                        <div class="nav-menu4">
+                            <li class="dropdown"><a class="list1" style="--i:3";>PRICING</a></li>
+                        </div>
+                        <div class="nav-menu5">
+                            <ul class="nav-menu">
+                                <li class="dropdown">
+                                    <a href="#" class="underline" style="--i:4";>RESOURCES <i class="fas fa-chevron-down chevron-down"></i></a>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-column">
+                                            <ul class="submenu">
+                                                <li><a href="#" class="lien2">Platform 1</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-brands fa-instagram"></i>Instapage overview</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-face-smile"></i>Integration</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <ul class="submenu">
+                                                <li><a href="#" class="lien2">Platform 2</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Other features</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-folder"></i>Support</a></li>
+                                                <li><a href="#" class="lien2"><i class="fa-solid fa-wand-magic-sparkles"></i>About us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="#https://www.instagram.com/" class="login-btn" target="_blank" style="--i:5";>LOGIN</a>
+                        <a href="#" class="get-started-btn" style="--i:6";>GET STARTED</a>
+                    </div>
                 </div>
-                <div class="nav-buttons">
-                    <a href="#https://www.instagram.com/" class="login-btn" target="_blank">LOGIN</a>
-                    <a href="#" class="get-started-btn">GET STARTED</a>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+
+       <!-- <div class="Interface1-content">
+            <div class="header-menu">
+                <header class="menuToggle" id="menuToggle">
+                    
+                    <div class="menu-nav-container">
+                        <div class="logo">
+                          Instapage
+                        </div>
+                    
+                         <a href="#" class="dropdown" style="--i:0";>PLATFORM</a>
+                <a href="#" class="" style="--i:1";>SOLUTION</a>
+                <a href="#" style="--i:2";>CUSTOMER STORIES</a>
+                <a href="#" style="--i:3";>PRICING</a>
+                <a href="#" style="--i:4";>RESOURCES</a>
+                <a href="#" class="nav-content" style="--i:5";>LOGIN</a>
+                <a href="#" class="get-started-btn" style="--i:6";><BUtton>GET STARTED</BUtton></a>
         
+                       
+                        <div class="nav-list">
+                            <div class="nav-menu1">
+                                <ul class="nav-menu">
+                                    <li class="dropdown">
+                                        <a href="#phototype" class="underline"><span class="ligne">PLATFORM</span> --><!-- <i class="fas fa-chevron-down chevron-down"></i>-->
+                                       <!-- </a>
+                                        <div class="dropdown-content">
+                                            <div class="dropdown-column">
+                                                <ul class="submenu">
+                                                    <li><a href="#" class="lien2">Platform 1</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fas fa-home"></i>Instapage overview</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Features</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fas fa-user"></i>Integration</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-bars"></i>Contact</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-column">
+                                                <ul class="submenu">
+                                                    <li><a href="#" class="lien2">Platform 2</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Other features</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-folder"></i>Support</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-mug-saucer"></i>About us</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fas fa-user"></i>Integration</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-bars"></i>Contact</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-mug-saucer"></i>About us</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-menu2">
+                                <ul class="nav-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="underline">SOLUTIONS</a>
+                                        <div class="dropdown-content">
+                                            <div class="dropdown-column">
+                                                <ul class="submenu">
+                                                    <li><a href="#" class="lien2">Platform 1</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-brands fa-instagram"></i>Instapage overview</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-address-book"></i>Integration</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-column">
+                                                <ul class="submenu">
+                                                    <li><a href="#" class="lien2">Platform 2</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Other features</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-folder"></i>Support</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-mug-saucer"></i>About us</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-column">
+                                                <ul class="submenu">
+                                                    <li><a href="#" class="lien2">Platform 3</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Other features</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-folder"></i>Support</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-mug-saucer"></i>About us</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-menu3">
+                                <li class="dropdown"><a href="#card-container" class="list1">CUSTOMER STORIES</a></li>
+                            </div>
+                            <div class="nav-menu4">
+                                <li class="dropdown"><a class="list1">PRICING</a></li>
+                            </div>
+                            <div class="nav-menu5">
+                                <ul class="nav-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="underline">RESOURCES</a>
+                                        <div class="dropdown-content">
+                                            <div class="dropdown-column">
+                                                <ul class="submenu">
+                                                    <li><a href="#" class="lien2">Platform 1</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-brands fa-instagram"></i>Instapage overview</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-face-smile"></i>Integration</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-column">
+                                                <ul class="submenu">
+                                                    <li><a href="#" class="lien2">Platform 2</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-gear"></i>Other features</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-folder"></i>Support</a></li>
+                                                    <li><a href="#" class="lien2"><i class="fa-solid fa-wand-magic-sparkles"></i>About us</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-buttons">
+                            <a href="#https://www.instagram.com/" class="login-btn" target="_blank">LOGIN</a>
+                            <a href="#" class="get-started-btn">GET STARTED</a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+                
+            
+        </div>
+        -->
         <div class="Landing" id="Landing">
             <div class="Landing-content">
                 <h1 class="Landing-h1">Landing pages without limits</h1>
@@ -109,8 +262,8 @@
                 <img src="img/Screenshot_20240710-132435_1.jpg" alt="Instapage interface" width="50px" height="290px">
             </div>
         </div>
-        </section>
-        <section class="interface2">
+    </section>
+    <section class="interface2">
             <header class="header-interface2">
                 <div class="nav-bar1">
                     <div class="nav-bar-left">
@@ -119,9 +272,9 @@
                     <div class="nav-bar-center">
                         <ul class="nav-bar-lists3">
                             <li class="list3">Honey </li>
-                            <li class="list3">Zendesk</li>
+                            <li class="list3"><i class="fa-solid fa-landmark"></i>Zendesk</li>
                             <li class="list3">MasterClass</li>
-                            <li class="list3">Vimeo</li>
+                            <li class="list3"><i class="fa-brands fa-vimeo"></i>Vimeo</li>
                         </ul>
                     </div>
                 </div>
@@ -159,21 +312,21 @@
               <div class="icon"></i></div>
               <h3>Landing Pages</h3>
               <p>Easy to build, fast loading times, with Instapage, you can create top-performing landing pages in minutes— without a developer.</p>
-              <a href="#" class="learn-more">></a>
+              <a href="#" class="learn-more"><div class="chevron">&gt;</div></a>
             </div>
             
             <div class="card">
               <div class="icon"></div>
               <h3>Personalization</h3>
               <p>Serve targeted messaging to every audience with relevant landing pages that increase sales, leads, and customer satisfaction.</p>
-              <a href="#" class="learn-more">></a>
+              <a href="#" class="learn-more"><div class="chevron">&gt;</div></a>
             </div>
             
             <div class="card">
               <div class="icon"></div>
               <h3>Experimentation</h3>
               <p>Optimize your landing pages with data-backed insights from in-app A/B testing, on- page behavior analytics, and robust reporting.</p>
-              <a href="#" class="learn-more">></a>
+              <a href="#" class="learn-more"><div class="chevron">&gt;</div></a>
             </div>
           </div>
           <div class="row">
@@ -181,21 +334,23 @@
               <div class="icon"></div>
               <h3>AdMap®</h3>
               <p>Effortlessly connect ads to relevant landing pages and boost your post-click conversion rates.</p>
-              <a href="#" class="learn-more">></a>
+              <a href="#" class="learn-more"><div class="chevron">&gt;</div></a>
             </div>
             
             <div class="card">
               <div class="icon"></div>
               <h3>Collaboration</h3>
               <p>Launch campaigns faster with intuitive, cloud-based features that streamline your team's workflow.</p>
-              <a href="#" class="learn-more">></a>
+              <a href="#" class="learn-more"><div class="chevron">&gt;</div></a>
             </div>
             
             <div class="card">
-              <div class="icon"></div>
+              <div class="icon"> 
+                <i class="fas-fa-users"></i>
+              </div>
               <h3>Page Speed</h3>
               <p>Capture visitor attention right away with lightning-fast load times on every device.</p>
-              <a href="#" class="learn-more"> <i class="chevrons">></i></a>
+              <a href="#" class="learn-more"> <!--&#x2192;--><div class="chevron">&gt;</div> </a>
             </div>
           </div>
           </div>
@@ -204,21 +359,21 @@
         <section class="awards-section">
             <div class="awards-container">
             <div class="awards-text">
-            <h2>Instapage leads the way in the G2 Summer Awards</h2>
-            <ul class="awards-list">
-                <li>Users Love Us</li>
-                <li>Leader</li>
-                <li>Most Implementable: Enterprise</li>
-                <li>Highest User Adoption: Enterprise</li>
-                <li>Fastest Implementation: Enterprise</li>
-                <li>Leader: Mid-Market</li>
-                <li>Leader: Small Business</li>
-                <li>Leader: Europe</li>
-                <li>Momentum Leader</li>
-                <li>High Performer: Enterprise</li>
-                <li>High Performer: Mid-Market</li>
-                <li>High Performer: Asia Pacific</li>
-            </ul>
+                <h2>Instapage leads the way in the G2 Summer Awards</h2>
+                <ul class="awards-list">
+                    <li>Users Love Us</li>
+                    <li>Leader</li>
+                    <li>Most Implementable: Enterprise</li>
+                    <li>Highest User Adoption: Enterprise</li>
+                    <li>Fastest Implementation: Enterprise</li>
+                    <li>Leader: Mid-Market</li>
+                    <li>Leader: Small Business</li>
+                    <li>Leader: Europe</li>
+                    <li>Momentum Leader</li>
+                    <li>High Performer: Enterprise</li>
+                    <li>High Performer: Mid-Market</li>
+                    <li>High Performer: Asia Pacific</li>
+                </ul>
             </div>
             <div class="awards-images">
                 <img src="img/trust-seals-results.svg" alt="image Awards">
@@ -230,6 +385,7 @@
         </section>
         <section class="testimonial-section">
             <div class="testimonial">
+                <h1>Our customers love Instapage</h1>
                 <img src="img/IMG-20240424-WA0041.jpg" alt="Stefano Rigoni">
                 <h3>EUROSPORT</h3>
                 <blockquote>
@@ -243,7 +399,7 @@
                     <div class="interface3-content">
                         <p class="interface3-content3-texte">
                             <h2>Are you ready to turn more ad clicks into conversions?</h2>
-                            Try the most advanced landing page platform today. Schedule a product demo to learn<br>
+                            Try the most advanced landing page platform today. Schedule a product demo to learn lorem lorem lorem Lorem ipsum dolor, sit amet consectetur elit.<br>
                               more.
                         </p>
                             <button class="get-started-btn">GET STARTED</button>
@@ -317,16 +473,26 @@
                         </div>
                     </div>
                 </footer>
+    
    
     <script>
+       /* const menuToggle = document.getElementById('menuToggle');
+        const nav = document.querySelector('nav');
+        menuToggle.addEventListener('click',() =>{
+            nav.classList.toggle('active');
+        });*/
+
+
         window.addEventListener('scroll', function() {
             var header = document.querySelector('header');
-            if (window.scrollY > 70) {
+            if (window.scrollY > 100) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
         });
+
+
     </script>
 </body>
 </html>
